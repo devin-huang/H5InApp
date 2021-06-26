@@ -16,7 +16,7 @@ RN WebView
 # 原理
 
 - window 层使用观察者模式与 APP 通信， APP 需要在 window 层定义 `postMessage、receiveMessage` 用于 H5 发送内容 APP , H5 接收 APP 异步返回值，
-  使用随机码为键保存 Promise 的 reslove，在 APP 操作完成获取随机码并执行 reslove 实现异步处理，* H5的请求将会被APP劫持请求参数由APP去请求 *
+  使用随机码为键保存 Promise 的 reslove，在 APP 操作完成获取随机码并执行 reslove 实现异步处理，**H5的请求将会被APP劫持请求参数由APP去请求** 
 
 # 使用
 
